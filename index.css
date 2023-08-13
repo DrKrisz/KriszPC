@@ -13,14 +13,23 @@ ul li{
     margin: 0 0 0 20px;
 }
 .container {
+    background: linear-gradient(110deg, #41463d 20%, #1c1e1c 60%);
     display: flex;
     justify-content: center; /* Horizontal centering */
     align-items: center; /* Vertical centering */
-    height: auto; /* Adjust to your needs */
+    height: 100vh; /* Adjust to your needs */
+    position: relative;
+}
+.container h1{
+    position: absolute;
+    text-align: center;
+    font-size: 9vh;
+    color: white;
+    top: 5vh;
 }
 .prislist{
     width:25vw;
-    background-color: #1cfeba8f;
+    background-color: rgb(165, 165, 165);
 
     margin: 5vh;
     padding: 2vw;
@@ -31,6 +40,7 @@ ul li{
 
     font-size: 125%;
     transition: transform .2s;
+    color: white;
 }
 .prislist:hover{
 
@@ -54,5 +64,8 @@ footer{
 
 .welcome{
     width: 100%;
-    height: fit-content;
+    height: 50vh;
+    margin-top: 25vh;
+    text-align: center;
+    font-size: 3vh;
 }
