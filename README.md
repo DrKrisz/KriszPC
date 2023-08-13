@@ -1,2 +1,1 @@
-# KriszPC
-kriszpc.com
+https://drkrisz.github.io/KriszPC/
