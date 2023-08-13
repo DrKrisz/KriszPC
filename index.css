@@ -1,0 +1,29 @@
+body{
+    color: #41463d;
+    background: linear-gradient(110deg, #b8cdf8 20%, #9d8df1 60%);
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    padding: 10px;
+    margin: 0 0 0 20px;
+}
+.prislist{
+    margin-left: 25%;
+}
+.prislist p{
+    text-decoration-line: underline;
+}
+.space{
+    margin: 1000px 0 0 0;
+}
+header{
+    text-align: center;
+}
+footer{
+    padding: 50px;
+    text-align: center;
+    color: white;
+    background-color: #41463d;
+}
