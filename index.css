@@ -12,6 +12,7 @@ ul li{
     padding: 10px;
     margin: 0 0 0 20px;
 }
+
 .container {
     background: linear-gradient(110deg, #41463d 20%, #1c1e1c 60%);
     display: flex;
@@ -55,6 +56,11 @@ ul li{
 header{
     text-align: center;
 }
+header h1{
+    position: absolute;
+    top: 0;
+    left: 50vh;
+}
 footer{
     padding: 50px;
     text-align: center;
@@ -68,4 +74,50 @@ footer{
     margin-top: 25vh;
     text-align: center;
     font-size: 3vh;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 3.2vh;
+    right: 50vh;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+}
+
+.nav-menu {
+    display: none;
+    position: absolute;
+    top: 40px; /* Adjust the distance from the top as needed */
+    right: 50vh; /* Position the menu on the right */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu.active {
+    display: block;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 10px 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
