@@ -20,3 +20,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+window.addEventListener('scroll', function () {
+    const stickyMenu = document.getElementById('stickyMenu');
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > 0) {
+        stickyMenu.classList.add('sticky');
+    } else {
+        stickyMenu.classList.remove('sticky');
+    }
+});
