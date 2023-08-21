@@ -20,13 +20,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+const menuToggle = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('.nav-menu');
+
 window.addEventListener('scroll', function () {
-    const stickyMenu = document.getElementById('stickyMenu');
     const scrollPosition = window.scrollY;
 
     if (scrollPosition > 0) {
-        stickyMenu.classList.add('sticky');
+        menuToggle.classList.add('sticky');
     } else {
-        stickyMenu.classList.remove('sticky');
+        menuToggle.classList.remove('sticky');
     }
+});
+
+menuToggle.addEventListener('click', function () {
+    navMenu.classList.toggle('active');
 });
