@@ -20,8 +20,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-const menuToggle = document.querySelector('.menu-toggle');
-const navMenu = document.querySelector('.nav-menu');
 
 window.addEventListener('scroll', function () {
     const scrollPosition = window.scrollY;
